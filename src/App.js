@@ -21,16 +21,3 @@ function App() {
 }
 
 export default App;
-
-
-/*
-      <div className='container'>
-        <img src="img1.png" />
-        <img src="img1.png" />
-        <img src="img1.png" />
-        <img src="img1.png" />
-        <img src="img1.png" />
-        <img src="img1.png" />
-      </div>
-      
-      */
