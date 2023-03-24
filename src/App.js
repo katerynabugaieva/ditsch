@@ -1,25 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const arr = []
+  for (let i = 1; i < 49; i++) {
+    arr.push("./img" + i + ".png")
+  }
+  console.log(arr)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src="./img00.png" className="App-logo" alt="logo" />
+      <img src="./img0.png" />
+
+      <div className="container1">
+        {arr.map((item, key) => <img src={item} id={key} />)}
+      </div>
+
     </div>
   );
 }
 
 export default App;
+
+
+/*
+      <div className='container'>
+        <img src="img1.png" />
+        <img src="img1.png" />
+        <img src="img1.png" />
+        <img src="img1.png" />
+        <img src="img1.png" />
+        <img src="img1.png" />
+      </div>
+      
+      */
